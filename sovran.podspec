@@ -14,12 +14,14 @@ Pod::Spec.new do |s|
   s.author           = { "Segment" => "friends@segment.com" }
   s.source           = { :git => "https://github.com/segmentio/analytics-swift.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/segment'
+  s.swift_version = '5.3'
 
-  s.ios.deployment_target = '10.0'
-  s.tvos.deployment_target = '10.0'
-  s.osx.deployment_target = '10.13'
+  s.ios.deployment_target = '13.0'
+  s.tvos.deployment_target = '11.0'
+  s.osx.deployment_target = '10.15'
 
   s.source_files = [
     'Sources/**/*.swift'
   ]
+
 end
